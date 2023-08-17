@@ -1,8 +1,8 @@
 package com.navdroid.WifiTransfer
 
 /**
- * @Author: leavesCZY
- * @Desc:
+ * @Author: Naveed Ur Rehman
+ * @Designation : Android Developer
  */
 object Constants {
 

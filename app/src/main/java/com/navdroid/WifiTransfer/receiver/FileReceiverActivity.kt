@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer.receiver
+package com.navdroid.WifiTransfer.receiver // ktlint-disable package-name
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
@@ -22,8 +22,8 @@ import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume
 
 /**
- * @Author: leavesCZY
- * @Desc:
+ * @Author: Naveed Ur Rehman
+ * @Designation : Android Developer
  */
 class FileReceiverActivity : BaseActivity() {
 

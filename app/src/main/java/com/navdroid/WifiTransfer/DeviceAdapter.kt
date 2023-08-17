@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.navdroid.WifiTransfer.utils.WifiP2pUtils
 
 /**
- * @Author: leavesCZY
- * @Desc:
+ * @Author: Naveed Ur Rehman
+ * @Designation : Android Developer
  */
 
 interface OnItemClickListener {

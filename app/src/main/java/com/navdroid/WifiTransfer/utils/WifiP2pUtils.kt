@@ -3,8 +3,8 @@ package com.navdroid.WifiTransfer.utils
 import android.net.wifi.p2p.WifiP2pDevice
 
 /**
- * @Author: leavesCZY
- * @Desc:
+ * @Author: Naveed Ur Rehman
+ * @Designation : Android Developer
  */
 object WifiP2pUtils {
 

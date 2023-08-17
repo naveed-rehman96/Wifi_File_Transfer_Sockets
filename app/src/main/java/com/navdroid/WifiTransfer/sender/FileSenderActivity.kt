@@ -26,8 +26,8 @@ import com.navdroid.WifiTransfer.utils.WifiP2pUtils
 import kotlinx.coroutines.launch
 
 /**
- * @Author: leavesCZY
- * @Desc:
+ * @Author: Naveed Ur Rehman
+ * @Designation : Android Developer
  */
 @SuppressLint("NotifyDataSetChanged")
 class FileSenderActivity : BaseActivity() {

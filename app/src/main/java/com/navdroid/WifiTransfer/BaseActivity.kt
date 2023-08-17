@@ -7,8 +7,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 /**
- * @Author: leavesCZY
- * @Desc:
+ * @Author: Naveed Ur Rehman
+ * @Designation : Android Developer
  */
 open class BaseActivity : AppCompatActivity() {
 
