@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WifiP2P</string>
+    <string name="tips">1. Both the file sending end and the receiving end need to turn on Wifi\n2. The file receiving end first creates a group, and the file sending end searches for the device and clicks to connect\n3. After the connection is successful, the file receiving end starts monitoring first, and then sends the file Then select the file to send</string>
+</resources>
