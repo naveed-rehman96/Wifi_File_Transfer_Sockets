@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer.sender
+package com.navdroid.wifiTransfer.sender
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
@@ -15,14 +15,14 @@ import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.navdroid.WifiTransfer.BaseActivity
-import com.navdroid.WifiTransfer.DeviceAdapter
-import com.navdroid.WifiTransfer.DirectActionListener
-import com.navdroid.WifiTransfer.DirectBroadcastReceiver
-import com.navdroid.WifiTransfer.OnItemClickListener
 import com.navdroid.WifiTransfer.R
-import com.navdroid.WifiTransfer.models.ViewState
-import com.navdroid.WifiTransfer.utils.WifiP2pUtils
+import com.navdroid.wifiTransfer.BaseActivity
+import com.navdroid.wifiTransfer.DeviceAdapter
+import com.navdroid.wifiTransfer.DirectActionListener
+import com.navdroid.wifiTransfer.DirectBroadcastReceiver
+import com.navdroid.wifiTransfer.OnItemClickListener
+import com.navdroid.wifiTransfer.models.ViewState
+import com.navdroid.wifiTransfer.utils.WifiP2pUtils
 import kotlinx.coroutines.launch
 
 /**
@@ -231,11 +231,11 @@ class FileSenderActivity : BaseActivity() {
                     }
 
                     ViewState.Connecting -> {
-                        showLoadingDialog(message = "")
+                        showLoadingDialog(message = "Connecting")
                     }
 
                     is ViewState.Receiving -> {
-                        showLoadingDialog(message = "")
+                        showLoadingDialog(message = "Receiving")
                     }
 
                     is ViewState.Success -> {

@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer.sender
+package com.navdroid.wifiTransfer.sender
 
 import android.app.Application
 import android.content.Context
@@ -7,9 +7,9 @@ import androidx.core.net.toFile
 import androidx.documentfile.provider.DocumentFile
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.navdroid.WifiTransfer.Constants
-import com.navdroid.WifiTransfer.models.FileTransfer
-import com.navdroid.WifiTransfer.models.ViewState
+import com.navdroid.wifiTransfer.Constants
+import com.navdroid.wifiTransfer.models.FileTransfer
+import com.navdroid.wifiTransfer.models.ViewState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -25,11 +25,6 @@ import java.net.InetSocketAddress
 import java.net.Socket
 import kotlin.random.Random
 
-/**
- * @Author: CZY
- * @Date: 2022/9/26 10:38
- * @Desc:
- */
 class FileSenderViewModel(context: Application) : AndroidViewModel(context) {
 
     private val _viewState = MutableSharedFlow<ViewState>()

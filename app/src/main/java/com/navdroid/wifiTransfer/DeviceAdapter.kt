@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer
+package com.navdroid.wifiTransfer
 
 import android.net.wifi.p2p.WifiP2pDevice
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.navdroid.WifiTransfer.utils.WifiP2pUtils
+import com.navdroid.wifiTransfer.utils.WifiP2pUtils
 
 /**
  * @Author: Naveed Ur Rehman

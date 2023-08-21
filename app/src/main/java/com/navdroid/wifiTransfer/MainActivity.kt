@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer
+package com.navdroid.wifiTransfer
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -7,12 +7,13 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
-import com.navdroid.WifiTransfer.receiver.FileReceiverActivity
-import com.navdroid.WifiTransfer.sender.FileSenderActivity
+import com.navdroid.WifiTransfer.R
+import com.navdroid.wifiTransfer.receiver.FileReceiverActivity
+import com.navdroid.wifiTransfer.sender.FileSenderActivity
 
 /**
- * @Author: CZY
- * @Date: 2022/9/28 14:24
+ * @Author: Naveed Ur Rehman
+ * @Designation: Software Engineer Android
  * @Desc:
  */
 class MainActivity : BaseActivity() {

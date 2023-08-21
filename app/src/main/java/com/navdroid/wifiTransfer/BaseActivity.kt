@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer
+package com.navdroid.wifiTransfer
 
 import android.app.Activity
 import android.app.ProgressDialog

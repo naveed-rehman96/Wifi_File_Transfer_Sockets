@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer
+package com.navdroid.wifiTransfer
 
 /**
  * @Author: Naveed Ur Rehman

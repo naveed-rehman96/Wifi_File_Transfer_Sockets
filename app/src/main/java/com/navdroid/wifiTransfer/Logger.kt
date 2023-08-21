@@ -1,16 +1,10 @@
-package com.navdroid.WifiTransfer
+package com.navdroid.wifiTransfer // ktlint-disable package-name
 
 import android.util.Log
 
-/**
- * @Author: CZY
- * @Date: 2022/9/27 16:52
- * @Desc:
- */
 object Logger {
 
     fun log(any: Any?) {
         Log.e("WifiP2P", any?.toString() ?: "null")
     }
-
 }

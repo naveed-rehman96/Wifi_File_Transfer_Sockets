@@ -1,12 +1,7 @@
-package com.navdroid.WifiTransfer.models
+package com.navdroid.wifiTransfer.models // ktlint-disable package-name
 
 import java.io.File
 
-/**
- * @Author: CZY
- * @Date: 2022/9/26 17:49
- * @Desc:
- */
 sealed class ViewState {
 
     object Idle : ViewState()
@@ -18,5 +13,4 @@ sealed class ViewState {
     class Success(val file: File) : ViewState()
 
     class Failed(val throwable: Throwable) : ViewState()
-
 }

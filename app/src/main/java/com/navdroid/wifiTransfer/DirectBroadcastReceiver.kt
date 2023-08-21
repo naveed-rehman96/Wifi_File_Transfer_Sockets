@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer
+package com.navdroid.wifiTransfer
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
@@ -11,8 +11,8 @@ import android.net.wifi.p2p.WifiP2pInfo
 import android.net.wifi.p2p.WifiP2pManager
 
 /**
- * @Author: CZY
- * @Date: 2022/9/28 14:24
+ * @Author: Naveed Ur Rehman
+ * @Designation: Software Engineer Android
  * @Desc:
  */
 interface DirectActionListener : WifiP2pManager.ChannelListener {
@@ -26,13 +26,12 @@ interface DirectActionListener : WifiP2pManager.ChannelListener {
     fun onSelfDeviceAvailable(wifiP2pDevice: WifiP2pDevice)
 
     fun onPeersAvailable(wifiP2pDeviceList: Collection<WifiP2pDevice>)
-
 }
 
 class DirectBroadcastReceiver(
     private val wifiP2pManager: WifiP2pManager,
     private val wifiP2pChannel: WifiP2pManager.Channel,
-    private val directActionListener: DirectActionListener
+    private val directActionListener: DirectActionListener,
 ) : BroadcastReceiver() {
 
     companion object {
@@ -45,7 +44,6 @@ class DirectBroadcastReceiver(
             intentFilter.addAction(WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION)
             return intentFilter
         }
-
     }
 
     @SuppressLint("MissingPermission")
@@ -54,7 +52,7 @@ class DirectBroadcastReceiver(
             WifiP2pManager.WIFI_P2P_STATE_CHANGED_ACTION -> {
                 val enabled = intent.getIntExtra(
                     WifiP2pManager.EXTRA_WIFI_STATE,
-                    -1
+                    -1,
                 ) == WifiP2pManager.WIFI_P2P_STATE_ENABLED
                 directActionListener.wifiP2pEnabled(enabled)
                 if (!enabled) {
@@ -67,7 +65,7 @@ class DirectBroadcastReceiver(
                 Logger.log("WIFI_P2P_PEERS_CHANGED_ACTION")
                 wifiP2pManager.requestPeers(wifiP2pChannel) { peers ->
                     directActionListener.onPeersAvailable(
-                        peers.deviceList
+                        peers.deviceList,
                     )
                 }
             }
@@ -97,9 +95,8 @@ class DirectBroadcastReceiver(
                 if (wifiP2pDevice != null) {
                     directActionListener.onSelfDeviceAvailable(wifiP2pDevice)
                 }
-                Logger.log("WIFI_P2P_THIS_DEVICE_CHANGED_ACTION ： ${wifiP2pDevice.toString()}")
+                Logger.log("WIFI_P2P_THIS_DEVICE_CHANGED_ACTION ： $wifiP2pDevice")
             }
         }
     }
-
 }

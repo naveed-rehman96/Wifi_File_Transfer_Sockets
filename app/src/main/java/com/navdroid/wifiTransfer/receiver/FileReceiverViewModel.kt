@@ -1,12 +1,12 @@
-package com.navdroid.WifiTransfer.receiver
+package com.navdroid.wifiTransfer.receiver
 
 import android.app.Application
 import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.navdroid.WifiTransfer.Constants
-import com.navdroid.WifiTransfer.models.FileTransfer
-import com.navdroid.WifiTransfer.models.ViewState
+import com.navdroid.wifiTransfer.Constants
+import com.navdroid.wifiTransfer.models.FileTransfer
+import com.navdroid.wifiTransfer.models.ViewState
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableSharedFlow

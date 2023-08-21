@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer.receiver // ktlint-disable package-name
+package com.navdroid.wifiTransfer.receiver // ktlint-disable package-name
 
 import android.annotation.SuppressLint
 import android.content.BroadcastReceiver
@@ -12,11 +12,11 @@ import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import coil.load
-import com.navdroid.WifiTransfer.BaseActivity
-import com.navdroid.WifiTransfer.DirectActionListener
-import com.navdroid.WifiTransfer.DirectBroadcastReceiver
+import com.navdroid.wifiTransfer.BaseActivity
+import com.navdroid.wifiTransfer.DirectActionListener
+import com.navdroid.wifiTransfer.DirectBroadcastReceiver
 import com.navdroid.WifiTransfer.R
-import com.navdroid.WifiTransfer.models.ViewState
+import com.navdroid.wifiTransfer.models.ViewState
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resume
@@ -139,11 +139,11 @@ class FileReceiverActivity : BaseActivity() {
                     }
 
                     ViewState.Connecting -> {
-                        showLoadingDialog(message = "")
+                        showLoadingDialog(message = "Connecting")
                     }
 
                     is ViewState.Receiving -> {
-                        showLoadingDialog(message = "")
+                        showLoadingDialog(message = "Receiving")
                     }
 
                     is ViewState.Success -> {

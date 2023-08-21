@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer.utils
+package com.navdroid.wifiTransfer.utils
 
 import android.net.wifi.p2p.WifiP2pDevice
 

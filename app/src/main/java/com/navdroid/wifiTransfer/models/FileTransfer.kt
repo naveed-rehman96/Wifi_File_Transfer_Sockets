@@ -1,4 +1,4 @@
-package com.navdroid.WifiTransfer.models
+package com.navdroid.wifiTransfer.models
 
 import java.io.Serializable
 
